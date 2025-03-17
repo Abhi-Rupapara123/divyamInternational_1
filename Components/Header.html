@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+    <title>fntelectromation</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="" />
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/7c640278bf.js"
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <style type="text/css">
+        @media (max-width: 1279px) {
+          .light-logo {
+            display: none;
+          }
+        }
+
+        @media (min-width: 1278px) {
+          .dark-logo {
+            display: none;
+          }
+        }
+      </style>
+      <header>
+        <div class="header-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 d-flex align-items-center">
+                <div class="left-part">
+                  <div class="logo light-logo">
+                    <a href="javascript:void(0)" title="Logo">
+                      <img src="../assets/image/logo.png" alt="Logo" />
+                    </a>
+                  </div>
+                  <div class="dark-logo">
+                    <a href="javascript:void(0)" title="Logo">
+                      <img src="assets/image/logo.png" alt="Logo" />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="right-part d-flex align-items-center justify-content-end">
+                  <nav class="menu justify-content-center" id="menu">
+                    <ul class="brand-nav brand-navbar">
+                      <li>
+                        <a href="javascript:void(0)" title="Home">Home</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" title="About Us"
+                          >About Us</a
+                        >
+                      </li>
+                      <li class="is-open-a">
+                        <a href="javascript:void(0)" title="What We Do"
+                          >What We Do</a
+                        >
+                        <ul class="row sub-menu mega-menu">
+                          <li>
+                            <a
+                              href="javascript:void(0)"
+                              title="Turnkey Electrical Projects"
+                              >Turnkey Electrical Projects</a
+                            >
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)" title="VFD Panel"
+                              >VFD Panel</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="javascript:void(0)"
+                              title="Electrical Panel"
+                              >Electrical Panel</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" title="Clients">Clients</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" title="Contact">Contact</a>
+                      </li>
+                      <span class="contact-info">
+                        <a href="tel:+919724064208" title="+91 97240 64208">
+                          <p>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 97240 64208</span>
+                            <b>&</b>
+                          </p>
+                        </a>
+                        <a
+                          href="mailto:info@fntelectromation.com"
+                          title="info@fntelectromation.com">
+                          <p>
+                            <i class="far fa-envelope"></i>
+                            <span>info@fntelectromation.com</span>
+                          </p>
+                        </a>
+                      </span>
+                    </ul>
+                  </nav>
+                  <div class="right-nav">
+                    <span class="header-right">
+                      <div class="header_in">
+                        <a type="button" class="toggle" id="toggle">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                  <div class="nav-overlay" onclick="closeNav()"></div>
+                  <div class="menu_open_close text-right">
+                    <button
+                      type="submit"
+                      class="menuopen hum-menu"
+                      id="menu__open"
+                      onclick="openNav()"
+                      title="Menu Open">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                    <button
+                      type="submit"
+                      class="menuclose hum-menu"
+                      id="menu__close"
+                      onclick="closeNav()"
+                      title="Menu Close">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header part end  -->
+
+      <!-- side fixed contact info part start  -->
+      <div>
+        <div>
+          <div>
+            <ul class="fix-icon">
+              <li>
+                <a
+                  class="icons call"
+                  href="tel:919724064208"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fas fa-phone-alt"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="icons wp"
+                  href="https://wa.me/919724064208?text=Hello F&T ELECTROMATION PVT. LTD. I'm connection from your www.fntelectromation.com I want to know more about your product. Powered by :: Brandism Technologies"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- side fixed contact info part start  -->
+      <!-- Popup Form -->
+      <div class="inquiry-btn">
+        <a
+          href="#customername"
+          class="ripple-btn pinkBg"
+          data-toggle="modal"
+          data-target="#EnquiryPopup">
+          <span class="icon">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve">
+              <style type="text/css">
+                .brch01 {
+                  fill: none;
+                  stroke: #fff;
+                  stroke-width: 20;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                }
+
+                .brch02 {
+                  fill: none;
+                  stroke: #fff;
+                  stroke-width: 20;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                }
+              </style>
+              <path
+                class="brch01"
+                d="M201.4,103.2h112.4c1.2,0,2.3,0.1,3.5,0.2c45.8,3.2,81.3,41.2,81.4,87v130.9c-0.2,48.3-39.4,87.3-87.7,87.2
+	H201.4c-48.3,0.1-87.5-39-87.7-87.3V190.5C113.9,142.2,153.1,103.1,201.4,103.2z" />
+              <path
+                class="brch01"
+                d="M317.3,347.5H195.2 M398.8,190.5h-81.4v-87 M297,245.7l-40.7,40.7 M256.3,286.4l-40.7-40.7 M256.3,286.4V164.3" />
+              <circle class="brch02" cx="256.3" cy="255.9" r="231.6" />
+            </svg>
+          </span>
+          <span class="ripple pinkBg"></span>
+          <span class="ripple pinkBg"></span>
+          <span class="ripple pinkBg"></span>
+        </a>
+      </div>
+      <!-- End -->
+
+      <!-- side bart start -->
+      <div class="sidebar" id="sidebar">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2 class="cm-title text-white mb-3">
+                Divyam International
+              </h2>
+              <p class="tagline text-justify">
+                F&T ELECTROMATION PVT. LTD. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Optio assumenda nesciunt
+                voluptatibus maxime quos illum exercitationem deserunt quo
+                officiis, saepe iure quas tempore laboriosam. Perferendis id
+                obcaecati molestias et assumenda reprehenderit voluptatibus
+                recusandae inventore ipsam animi, quibusdam temporibus ipsa
+                fugiat quo. Excepturi dicta rem aliquam porro, recusandae
+                veritatis incidunt magni.
+              </p>
+              <ul class="contact-info">
+                <li>
+                  <div class="sm-title">ADDRESS :</div>
+                  <p>
+                    10 Plot-129 Suez Farm Shahwadi Sur-9, Manish Estate-2,
+                    Ahmedabad-380022, Gujarat, India.
+                  </p>
+                </li>
+                <li>
+                  <div class="sm-title">EMAIL :</div>
+                  <p>
+                    <a href="#">info@fntelectromation.com</a>
+                  </p>
+                </li>
+                <li>
+                  <div class="sm-title">PHONE :</div>
+                  <p><a href="#">+91 97240 64208</a></p>
+                </li>
+              </ul>
+
+              <div class="social">
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      title="Follow Us On Facebook"
+                      target="_blank"
+                      rel="nofollow">
+                      <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      title="Follow Us On Instagram"
+                      target="_blank"
+                      rel="nofollow">
+                      <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      title="Follow Us On Linkedin"
+                      target="_blank"
+                      rel="nofollow">
+                      <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      title="Follow Us On Youtube"
+                      target="_blank"
+                      rel="nofollow">
+                      <i class="fab fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- side bart end -->
+    </div>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.min.js" rel="preload"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <script>
+      const mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        loop: true,
+        speed: 300,
+        autoplay: true,
+        spaceBetween: 0,
+        slidesOffsetAfter: 0,
+        dots: true,
+        coverflowEffect: {
+          slideShadows: true,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+
+    <!-- Industries We Serve-slider-script -->
+    <!-- <script>
+  const ourSwiper = new Swiper(".ourSwiper", {
+    loop: true,
+    slidesPerView: 2,
+    speed: 300,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 15,
+    slidesOffsetAfter: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+</script>  -->
+
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var btn = document.querySelector(".toggle");
+      var btnst = true;
+
+      // Toggle button functionality
+      btn.onclick = function () {
+        if (btnst === true) {
+          // Open the modal and disable scrolling on the rest of the page
+          document.querySelector(".toggle span").classList.add("toggle");
+          document.getElementById("sidebar").classList.add("sidebarshow");
+          document.body.classList.add("body-overlay"); // Add overlay effect
+          btnst = false;
+        } else if (btnst === false) {
+          // Close the modal and re-enable scrolling on the rest of the page
+          document.querySelector(".toggle span").classList.remove("toggle");
+          document.getElementById("sidebar").classList.remove("sidebarshow");
+          document.body.classList.remove("body-overlay"); // Remove overlay effect
+          btnst = true;
+        }
+      };
+
+      // Close button functionality
+      var closeBtn = document.querySelector(".modal-header .close");
+      closeBtn.onclick = function () {
+        // Close the modal and re-enable scrolling on the rest of the page
+        document.getElementById("sidebar").classList.remove("sidebarshow");
+        document.body.classList.remove("body-overlay"); // Remove overlay effect
+        btnst = true;
+      };
+
+      // Close modal if clicked outside of it
+      window.onclick = function (event) {
+        var modal = document.getElementById("sidebar");
+        if (event.target === modal) {
+          modal.classList.remove("sidebarshow");
+          document.body.classList.remove("body-overlay"); // Remove overlay effect
+          btnst = true;
+        }
+      };
+    </script>
+
+    <!-- get-into-touch form validation -->
+    <script>
+      $(document).ready(function ($) {
+        $("#feedback").validate({
+          rules: {
+            name: "required",
+            password: {
+              required: true,
+              minlength: 6,
+            },
+            city: "required",
+            gender: "required",
+          },
+          messages: {
+            name: "Please enter your Name",
+            password: {
+              required: "Please provide a password",
+              minlength: "Your password must be at least 6 characters long",
+            },
+            city: "Please enter your city",
+            gender: "This field is required",
+          },
+          errorPlacement: function (error, element) {
+            if (element.is(":radio")) {
+              error.appendTo(element.parents(".form-group"));
+            } else {
+              // This is the default behavior
+              error.insertAfter(element);
+            }
+          },
+          submitHandler: function (form) {
+            form.submit();
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
