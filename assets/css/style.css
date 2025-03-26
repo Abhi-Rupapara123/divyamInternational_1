@@ -24401,6 +24401,7 @@ display: block;
 /* Show the second image when the container is hovered */
 .cabinet-product:hover .product-image {
   opacity: 1;
+  /* transform: scale(1.09); */
 }
 
 .cabinet-product:hover .product-image-detail {
