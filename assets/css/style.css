@@ -3162,6 +3162,28 @@ textarea.form-control.is-invalid {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: #f39100;
+}
+.dec-list:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 4px;
+  bottom: -5px;
+  width: 1px;
+  background: #eee;
+}
+.dec-list li {
+  float: left;
+  width: 70%;
+  padding: 15px 20px;
+  text-align: left;
+  position: relative;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  margin: 4px 0;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12068,8 +12090,7 @@ fieldset:disabled .btn {
   transition: all 0.5s ease;
 }
 
-.swiper-container:hover .swiper-button-next,
-.swiper-container:hover .swiper-button-prev {
+ .swiper-button-next, .swiper-button-prev {
   opacity: 10;
   visibility: visible;
 }
@@ -12173,7 +12194,7 @@ fieldset:disabled .btn {
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: var(--swiper-navigation-sides-offset, 0px);
-  left: 120px !important;
+  left: 120px;
 }
 
 .swiper-button-lock {
@@ -12182,7 +12203,7 @@ fieldset:disabled .btn {
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-family: swiper-icons;
+  font-family: 22px;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
   letter-spacing: 0;
@@ -12193,6 +12214,7 @@ fieldset:disabled .btn {
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   content: "prev";
+  font-size: 22px !important;
 }
 
 .swiper-button-next,
@@ -12204,6 +12226,7 @@ fieldset:disabled .btn {
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   content: "next";
+  font-size: 22px !important;
 }
 
 .swiper-pagination {
@@ -21095,13 +21118,13 @@ header.mobile-stick .header-section {
 /* .menu_open_close{
     display: none !important;
   } */
-/* .brand-nav{
+ .brand-nav{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
 }
-.brand-navbar li{
+/* .brand-navbar li{
     list-style: none;
     margin-right: 50px;
 }
@@ -24264,6 +24287,7 @@ border: 1px solid rgba(0,0,0,0.105);
 padding: 20px;
 box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
 }
+
 /* product-detail-page-start */
 h1 {
   margin-bottom: 0;
@@ -24284,8 +24308,8 @@ h2 {
 }
 
 .product__carousel .gallery-top {
-	border: 1px solid #ebebeb;
-	border-radius: 3px;
+	border: 1px solid #f39100;
+	border-radius: 10px;
 	margin-bottom: 5px;
 }
 .product__carousel .gallery-top .swiper-slide {
@@ -24303,7 +24327,7 @@ h2 {
 .product__carousel .gallery-top .swiper-slide a img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	/* object-fit: contain; */
 }
 .product__carousel .gallery-top .swiper-slide .easyzoom-flyout img {
 	min-width: 100%;
@@ -24311,7 +24335,11 @@ h2 {
 }
 .product__carousel .swiper-button-next.swiper-button-white,
 .product__carousel .swiper-button-prev.swiper-button-white {
-	color: #ff3720;
+	color: #000;
+}
+.swiper-button-next, .swiper-button-prev{
+  background-color: #f39100;
+  border-radius: 10px;
 }
 .product__carousel .gallery-thumbs .swiper-slide {
 	position: relative;
@@ -24331,17 +24359,22 @@ h2 {
 	top: 50%;
 	transform: translate(-50%,-50%);
 	max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .product-text{
   font-size: 14px;
   font-family: 'Poppins';
   color: var(--bs-gray);
-  font-weight: 600;
+  font-weight: 500;
+}
+.prdouct-category b{
+  font-weight: 500;
 }
 .product-heading{
   font-size: 34px;
   line-height: 1.2;
-  font-family: 'Poppins';
+  font-family: 'initial';
   font-weight: 400;
   color: var(--bs-dark);
 }
@@ -24440,3 +24473,45 @@ strong{
 .page-content p{
   font-size: 14px;
 }
+
+/* prdouct-detail-table-start */
+.prdouct-detail-table-heading h2{
+  font-family: monospace;
+  font-weight: 600;
+  border-bottom: 2px solid #36383a;
+  max-width: 250px;
+  width: 100%;
+}
+.prdouct-detail-table-heading span{
+  color: #fff;
+}
+.prdouct-detail-table-heading h6{
+  font-family: monospace;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: auto;
+}
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+table th, table td {
+  padding: .625em;
+  text-align: center;
+  font-size: 12px;
+}
+.hide-icon{
+  margin-left: 33px;
+}
+/* prdouct-detail-table-end */
