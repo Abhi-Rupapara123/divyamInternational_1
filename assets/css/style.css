@@ -20369,6 +20369,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
     margin: 0;
     clear: both;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
   }
 
   .menu ul li:after {
@@ -20394,8 +20395,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
   }
 
   .menu ul li ul {
-    display: none;
+    /* display: none; */
     min-height: auto !important;
+    width: 100%;
   }
 
   .menu ul li ul li:last-child {
@@ -22901,8 +22903,8 @@ p.pc-el-desc {
 }
 
 li.card:hover::before, .mission-section:hover:before{
-  width: 100%;
-  left: 0;
+  width: 94%; 
+  left: 13px;
 }
 li.card:hover h2, li.card:hover span, li.card:hover p, .mission-section:hover h2, .mission-section:hover p {
   color: #fff;
@@ -22917,7 +22919,7 @@ li.card:before, .mission-section::before{
   height: 100%;
   left: 50%;
   top: 0;
-  background: #254a96;
+  background: #f39100;
   color: #fff;
   z-index: -1;
   transition: 0.5s;
@@ -22942,7 +22944,7 @@ li.card:before, .mission-section::before{
   margin-bottom: 28px;
 }
 .first-box{
-  border: 2px solid #254a96;
+  border: 2px solid #f39100;
   padding: 30px;
   border-radius: 40px;
 }
@@ -22964,6 +22966,7 @@ li.card:before, .mission-section::before{
 .mission-section{
   position: relative;
   transition: box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
 }
 .mission-section::before{
   border-radius: 40px !important;
@@ -23488,6 +23491,9 @@ button.owl-prev span, button.owl-next span {
   .circle-background {
     width: 300px;
     height: 300px;
+  }
+  .brand-nav{
+    flex-direction: column;
   }
 }
 /* what-our-client-says-section-end */
@@ -24463,9 +24469,9 @@ display: block;
 .category-button {
   color: rgba(51, 51, 51, 0.7);
 }
-strong{
+/* strong{
   font-weight: 500;
-}
+} */
 .page-content ul li{
     color: var(--bs-gray);
     font-size: 14px;
